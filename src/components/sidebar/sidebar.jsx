@@ -1,4 +1,4 @@
-import { MdOutlineRssFeed, MdGroups } from "react-icons/md";
+import { MdOutlineRssFeed } from "react-icons/md";
 import { FaUserFriends, FaGraduationCap } from "react-icons/fa";
 import { SiCoinmarketcap } from "react-icons/si";
 import { BiCalendarEvent } from "react-icons/bi";
