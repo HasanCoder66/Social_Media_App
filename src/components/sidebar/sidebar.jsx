@@ -9,7 +9,11 @@ import {
   BsFillCameraVideoFill,
   BsFillChatSquareFill,
 } from "react-icons/bs";
+
 import "./sidebar.css";
+import {Users} from '../../dummydata'
+import{Friend} from '../friend/friends'
+
 
 function Sidebar() {
   return (
@@ -78,7 +82,9 @@ function Sidebar() {
         <button className="sideBarButton">Show More</button>
         <hr className="sideBarHr" />
         <ul className="sideBarFriendList">
-         
+         {Users.map(u => (
+          <Friend key={u.id} user={u}/>
+         ))}
         </ul>
        
       </div>

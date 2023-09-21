@@ -1,13 +1,15 @@
-import './friends.css'
-import user from '../../dummydata'
+import "./friends.css";
 
-function Friends({user}) {
+export function Friend({ user }) {
   return (
     <li className="sideBarFriend">
-    <img src={user.profilePicture} alt="Friend Image" className="sideBarFriendImg" />
-    <span className="sideBarFriendName">Mukhtar Ahmed</span>
-  </li>
-  )
+      <img
+        src={user.profilePicture}
+        alt="Friend Image"
+        className="sideBarFriendImg"
+      />
+      <span className="sideBarFriendName">{user.username}</span>
+    </li>
+  );
 }
 
-export default Friends
