@@ -1,6 +1,7 @@
 import "./rightbar.css";
 import { Users } from "../../dummydata";
 import Online from "../online/online";
+import MainHome from "../../pages/home/home";
 
 function Rightbar({ profile }) {
   console.log(profile);
@@ -36,7 +37,7 @@ function Rightbar({ profile }) {
   const ProfileRightBar = () => {
     return (
       <>
-        <h4 className="rightBarTitle"> user information </h4>
+        <h4 className="rightBarTitle"> User Information </h4>
         <div className="rightBarInfo">
           <div className="rightBarInfoItem">
             <span className="rightBarInfoKey">City:</span>
@@ -51,7 +52,7 @@ function Rightbar({ profile }) {
             <span className="rightBarInfoValue">Single</span>
           </div>
         </div>
-        <h4 className="rightBarTitle"> user Friends </h4>
+        <h4 className="rightBarTitle"> User Friends </h4>
         <div className="rightBarFollowings">
           <div className="rightBarFollowing">
             <img
@@ -110,7 +111,8 @@ function Rightbar({ profile }) {
   return (
     <div className="rightBar">
       <div className="rightbarWrapper">
-        <ProfileRightBar />
+       {/* <ProfileRightBar />  */}
+        {/* {profile ? <ProfileRightBar /> : <HomeRightBar/> } */}
       </div>
     </div>
   );

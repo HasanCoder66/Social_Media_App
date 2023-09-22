@@ -20,7 +20,7 @@ function Profile() {
             </div>
             <div className="profileInfo">
                 <h4 className="profileInfoName">Muhammad Hasan Ashraf</h4>
-                <span className="profileInfoDesc">Hello Social Media Community</span>
+                <span className="profileInfoDesc">Hello Social Media Community!</span>
             </div>
           </div>
           <div className="profileRightBottom">
